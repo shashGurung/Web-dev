@@ -16,8 +16,24 @@ nav{
     display: inline-block;
     padding: 16px;
 }
+.currentNav{
+    display: inline-block;
+    padding: 30px;
+    background-color: #99c2ff;
+}
 .nav {
     display: inline-block;
     padding: 30px;
     background-color: #458cff;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link{
+    color:black;
+}
+a:visited{
+    color:black;
 }
