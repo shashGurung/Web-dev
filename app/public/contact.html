@@ -13,25 +13,30 @@
                 <li class="nav"><a href="index.html">Home</a></li>
                 <li class="nav"><a href="goals.html">Goals</a></li>
                 <li class="nav"><a href="teaminformation.html">Team Information</a></li>
-                <li class="currentNav"><a href="contact.html">Contact Us</a></li>
+                <li class="currentNav"><a href="contact.html">Sign Up</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Contact Form</h2>
+        <h2>Sign-Up Form</h2>
         <div>
             <p class="form">required information is marked with an asterisk (*)</p>
             <form method="post" action = "" id="form">
                 <fieldset>
-                    <legend>Contact form</legend>
-                    <label for="name">Name: (*)</label>
-                    <input type="text" id="name" size="25" required aria-required="true"/>
-
+                    <legend>Sign-Up</legend>
+                    <label for="firstname">First Name: (*)</label>
+                    <input type="text" id="firstname" size="25" required aria-required="true"/>
+                    
+                    <label for="lastname">Last Name: (*)</label>
+                    <input type="text" id="lastname" size="25" required aria-required="true"/>
+                    
                     <label for="email">Email <i class="fa-regular fa-envelope-open"></i>: (*)</label>
                     <input type="email" id="email" size="25" required aria-required="true"/>
                     
-                    <label for="message">Message: (*)</label>
-                    <textarea id="message" size="25" required aria-required="true"></textarea>
+                    <label for="comment">Comments: (*)</label>
+                    <textarea id="comment" size="25" required aria-required="true"></textarea>
+
+                    <button id="submit" type="submit" form="form">Confirm</button>
                 </fieldset>
             </form>
         </div>
