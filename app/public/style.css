@@ -43,3 +43,33 @@ a:link{
 a:visited{
     color:black;
 }
+legend{
+    padding: 5px;
+    font-size: medium;
+}
+fieldset{
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 10px;
+    border-color: #3277e6;
+}
+input{
+    display:block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+textarea{
+    display:block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
