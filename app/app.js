@@ -22,6 +22,7 @@ app.post('/form', jsonParser, (req,res) => {
     const email = body.email;
     const comments = body.comments;
     res.send(' POST by form.js - first name = ' + firstname + ' , lastname = ' + lastname + ' , email = ' +email+ ' , comments = ' + comments);
+    // Save this data to signups.txt
 })
 
 app.listen(port, () => {
