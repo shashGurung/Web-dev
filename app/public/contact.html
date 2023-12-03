@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Home Page</title>
+    <script src="form.js" defer></script>
 </head>
 <body>
     <header>
@@ -33,13 +34,14 @@
                     <label for="email">Email <i class="fa-regular fa-envelope-open"></i>: (*)</label>
                     <input type="email" id="email" size="25" required aria-required="true"/>
                     
-                    <label for="comment">Comments: (*)</label>
-                    <textarea id="comment" size="25" required aria-required="true"></textarea>
+                    <label for="comments">Comments: (*)</label>
+                    <textarea id="comments" size="25" required aria-required="true"></textarea>
 
                     <button id="submit" type="submit" form="form">Confirm</button>
                 </fieldset>
             </form>
         </div>
+        <p id="form-results"></p>
     </main>
     <footer>
         <p><a href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/">UN Sustainablity Goals</a></p>
