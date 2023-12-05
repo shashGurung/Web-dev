@@ -8,7 +8,7 @@
 /* Body & Typography */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    line-height: 1.4;
     color: #333;
     background-color: #a9b0b4;
     padding: 20px;
@@ -26,6 +26,74 @@ nav {
     border-radius: 5px;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9; /* Light background color */
+    min-width: 160px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    z-index: 1; 
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left; 
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* Light grey background on hover */
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown .dropdown-content.show { 
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #2293bf; 
+}
+
+.dropbtn {
+    position: relative; 
+}
+
+.dropbtn .arrow-down:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -10px; 
+    transform: translateY(-50%);
+    border: 5px solid transparent;
+    border-top-color: #fff; 
+    border-bottom: none; 
+}
+
+.dropbtn .arrow-down.open:after {
+    border-top: none;
+    border-bottom-color: #fff; 
+}
+
+p{
+    font-size: larger;
+}
+
+strong{
+    font-size: x-large;
+    /* background-color: rgba(252, 253, 203, 0.7); */
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 90%;
+    box-sizing: border-box;
+    /* color: #fff; */
+}
+
+#KIT{
+font-size: 35px;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -33,7 +101,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block; /* Inline-block for horizontal list items */
+    display: inline-block;
 }
 
 nav ul li a {
@@ -44,19 +112,22 @@ nav ul li a {
     border-radius: 5px; /* Rounded corners for nav links */
     font-size: 25px;
     font-weight: bold;
+    border-color: #016ea5;
+    border-left:  1px solid #016ea5 ;
+    border-right:  1px solid #016ea5;
     /* border-color: #fff; هنا تقدر تعدل على المنيكة اللي فوق 
     border-width: 2px;
     border-style: solid; */
 }
 
 nav ul li a:hover,
-nav ul li a.active { /* Styling for hover and active state */
+nav ul li a.active {
     background-color: #2293bf; /* Active link background color */
 }
 
 /* Hamburger Icon Styling */
 #hamburger-icon {
-    display: none; /* Hidden by default, will be displayed on small screens */
+    display: none; 
     cursor: pointer;
     position: absolute;
     top: 10px;
@@ -65,7 +136,7 @@ nav ul li a.active { /* Styling for hover and active state */
     flex-direction: column;
     justify-content: space-around;
     width: 30px;
-    height: 30px; /* Adjusted for correct spacing */
+    height: 30px; 
 }
 
 #hamburger-icon div {
@@ -80,13 +151,13 @@ header {
     text-align: center;
     color: white;
     background-color: #333; /* Fallback color */
-    overflow: hidden; /* Ensures no overflow of the content */
+    overflow: hidden; 
 }
 
 header img {
     width: 100%;
-    max-height: 600px; /* Limits the height of the image */
-    object-fit: cover; /* Ensure the image covers the header area */
+    max-height: 600px; 
+    object-fit: cover; 
     border-radius: 5px;
 }
 
@@ -95,11 +166,11 @@ header h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 10px;
     border-radius: 5px;
     width: auto;
-    max-width: 90%; /* Ensure the title doesn't span the full width of the header */
+    max-width: 90%; 
     box-sizing: border-box;
 }
 
@@ -115,13 +186,15 @@ section {
 section#key-information {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Ensure content wraps on small screens */
+    /* justify-content: space-between; */
+    gap: 20px;
 }
 
 section#key-information img {
-    max-width: 50%;
-    margin-left: 20px;
+    max-width:45%;
+    height: 800px;
+    margin-right: 20px;
+    border-radius: 10px;
 }
 
 /* Future Targets Section with Image to the Left */
@@ -129,17 +202,21 @@ section#future-targets {
     display: flex;
     align-items: center;
     gap: 20px;
-    flex-wrap: wrap; /* Ensure content wraps on small screens */
+    /* font-size: large; */
 }
 
 section#future-targets img {
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 35%;
+    height: 600px;
     margin-right: 20px;
-    height: 400px; 
-     width: 600px;
-     border-radius: 10px;
+    border-radius: 10px;
 }
+
+h2{
+    font-size: 40px;
+}
+
+
 
 /* Clearfix for floated elements */
 .clearfix::after {
@@ -158,26 +235,25 @@ footer {
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
-    /* Adjust image and text stacking for smaller screens */
+   
     header img {
-        max-height: 200px; /* Smaller max height for the header image on smaller screens */
+        max-height: 200px; 
     }
 
     header h1 {
-        font-size: 1.5rem; /* Smaller font size for the title */
-        position: static; /* Static positioning on small screens */
+        font-size: 1.5rem; 
+        position: static; 
         transform: none;
-        margin: 0 auto; /* Centering the title block */
-        width: 100%; /* Full width */
-        background-color: transparent; /* Remove background for smaller screens */
+        margin: 0 auto; 
+        width: 100%; 
+        background-color: transparent; 
     }
 
-    /* Show hamburger icon and adjust nav layout */
+    /* To show the hamburger icon and adjust nav layout */
     #hamburger-icon {
         display: flex;
     }
 
-     /* Hide the navigation links by default */
      nav ul {
         display: none;
         flex-direction: column;
@@ -189,7 +265,7 @@ footer {
         background: #005a87;
         margin: 0;
         padding: 0;
-        z-index: 1000; /* Ensures that the menu is above other content */
+        z-index: 1000; 
         border-radius: 0 0 5px 5px;
     }
 
@@ -200,27 +276,42 @@ footer {
     }
 
     nav ul li a {
-        text-align: left; /* Align text to the left within dropdown */
+        text-align: left; 
         width: 100%;
         padding: 10px;
+        border-bottom: 1px solid #fff;
     }
 
-    /* Show nav links when hamburger is clicked */
+  
     nav ul.show {
         display: block;
     }
 
-    /* Adjust header title for small screens */
+
     header h1 {
         font-size: 1.5rem;
-        position: static; /* Static positioning on small screens */
+        position: static; 
         transform: none;
         margin: 0 auto;
-        background-color: transparent; /* Remove background for smaller screens */
+        background-color: transparent; 
     }
 
-    /* Adjust header image height for small screens */
+ 
     header img {
         max-height: 200px;
+    }
+        
+
+    .dropdown-content {
+        box-shadow: none;
+    }
+    
+
+    .dropdown-content {
+        position: static;
+    }
+
+    .dropdown-content a {
+        width: 100%;
     }
 }

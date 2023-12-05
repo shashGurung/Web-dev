@@ -8,27 +8,91 @@
 /* Body & Typography */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    line-height: 1.4;
     color: #333;
-    background-color: #a9b0b4; /* Background color of the page */
+    background-color: #a9b0b4;
     padding: 20px;
+    border-radius: 5px;
 }
-
 
 /* Navigation */
 nav {
     background: #016ea5; /* Background color for the nav bar */
     color: #fff;
+    /* padding: 10px 20px; */
     text-align: center;
     position: relative;
-    z-index: 1000; /* Ensures nav is on top */
+    z-index: 1000; /* High z-index to ensure nav is on top */
     border-radius: 5px;
 }
 
-h2{
-    font-size: 40px;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9; /* Light background color */
+    min-width: 160px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    z-index: 1; 
 }
 
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left; 
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* Light grey background on hover */
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown .dropdown-content.show { 
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #2293bf; 
+}
+
+.dropbtn {
+    position: relative; 
+}
+
+.dropbtn .arrow-down:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -10px; 
+    transform: translateY(-50%);
+    border: 5px solid transparent;
+    border-top-color: #fff; 
+    border-bottom: none; 
+}
+
+.dropbtn .arrow-down.open:after {
+    border-top: none;
+    border-bottom-color: #fff; 
+}
+
+p{
+    font-size: larger;
+}
+
+strong{
+    font-size: x-large;
+    /* background-color: rgba(252, 253, 203, 0.7); */
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 90%;
+    box-sizing: border-box;
+    /* color: #fff; */
+}
+
+#KIT{
+font-size: 35px;
+}
 
 nav ul {
     list-style-type: none;
@@ -37,22 +101,48 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block; /* Horizontal list items */
+    display: inline-block;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 20px 30px;
-    display: block;
+    padding: 20px 30px 20px 30px;
+    display:block;
     border-radius: 5px; /* Rounded corners for nav links */
     font-size: 25px;
     font-weight: bold;
+    border-color: #016ea5;
+    border-left:  1px solid #016ea5 ;
+    border-right:  1px solid #016ea5;
+    /* border-color: #fff; هنا تقدر تعدل على المنيكة اللي فوق 
+    border-width: 2px;
+    border-style: solid; */
 }
 
 nav ul li a:hover,
-nav ul li a.active { /* Styling for hover and active state */
+nav ul li a.active {
     background-color: #2293bf; /* Active link background color */
+}
+
+/* Hamburger Icon Styling */
+#hamburger-icon {
+    display: none; 
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 1001;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px; 
+}
+
+#hamburger-icon div {
+    background-color: white;
+    height: 3px;
+    width: 100%;
 }
 
 /* Header with Title Overlay */
@@ -61,16 +151,14 @@ header {
     text-align: center;
     color: white;
     background-color: #333; /* Fallback color */
-    overflow: hidden; /* Ensures no overflow of the content */
-    border-radius: 5px;
+    overflow: hidden; 
 }
 
-header#about-header {
-    background-image: url('team-header-image.jpg'); /* Path to your header background image */
-    background-size: cover;
-    background-position: center;
-    height: 750px; /* Adjust the height as needed */
-    font-size: 35px;
+header img {
+    width: 100%;
+    max-height: 600px; 
+    object-fit: cover; 
+    border-radius: 5px;
 }
 
 header h1 {
@@ -78,147 +166,152 @@ header h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 10px;
     border-radius: 5px;
-    max-width: 90%;
+    width: auto;
+    max-width: 90%; 
     box-sizing: border-box;
 }
 
-/* Main content and sections */
-main {
-    background: white; /* Background of the main content area */
-    border-radius: 5px;
-    margin-bottom: 20px;
-    padding: 20px;
-}
-
-/* Individual sections within main */
+/* Section Styling */
 section {
-    margin-bottom: 20px;
-}
-
-/* Team information styling */
-#team-information div {
-    background: #f2f2f2; /* Light background for team member info */
-    padding: 15px;
-    margin-bottom: 10px;
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
     border-radius: 5px;
-    height: 500px; 
-    /* شف له صرفة بحيث انك لا صغرت الشاشة ما يدخل كل شي ببعضه,ممكن تحل المشكلة انك تحد اوتو */
-
-    font-size: 25px;
 }
 
-#team-information img {
-    width: 600px;
+/* Key Information Section with Image to the Right */
+section#key-information {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 20px;
+}
+
+section#key-information img {
+    max-width:45%;
     height: 800px;
-    border-radius: 8px;
-    display:block;
-    margin-bottom: 10px;
-    max-width: 90%;
-    max-height: 99%;
-    float: left;
-    margin-left: 20px;
     margin-right: 20px;
+    border-radius: 10px;
 }
 
-#team-information h2 {
-    margin-bottom: 5px;
+/* Future Targets Section with Image to the Left */
+section#future-targets {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* font-size: large; */
 }
 
-#team-information p {
-    font-size: 16px; /* Adjust font size as needed */
-    margin-bottom: 5px;
+section#future-targets img {
+    max-width: 35%;
+    height: 600px;
+    margin-right: 20px;
+    border-radius: 10px;
 }
 
-#team-information ul {
-    list-style: inside disc;
+h2{
+    font-size: 40px;
+}
+
+
+
+/* Clearfix for floated elements */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 /* Footer */
 footer {
     background: #333;
     color: white;
-    text-align: center;
     padding: 10px 20px;
-    border-radius: 5px;
+    text-align: center;
 }
-
-/* Base styles for the hamburger icon */
-#hamburger-icon {
-    display: none; /* Hide by default */
-    cursor: pointer;
-    /* Add styles for the bars of the hamburger icon here */
-}
-
-
-
-
-/* Styles for when the hamburger icon is active/clicked */
-/* #hamburger-icon.active .bar1,
-#hamburger-icon.active .bar2, //////////// مدري وش سالفتهم لكن لا تخليهم 
-#hamburger-icon.active .bar3
- { */
-    /* Add transform styles for active state */
-/* } */
-
-
-
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
-    /* Adjust header for smaller screens */
-    header#about-header {
-        height: 200px; /* Smaller height for the header on smaller screens */
+   
+    header img {
+        max-height: 200px; 
     }
 
-    /* Hamburger icon for smaller screens */
+    header h1 {
+        font-size: 1.5rem; 
+        position: static; 
+        transform: none;
+        margin: 0 auto; 
+        width: 100%; 
+        background-color: transparent; 
+    }
+
+    /* To show the hamburger icon and adjust nav layout */
     #hamburger-icon {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        z-index: 2000;
+        display: flex;
     }
 
-    .bar1, .bar2, .bar3 {
-        width: 35px; /* Width of the hamburger icon bars */
-        height: 5px; /* Height of the hamburger icon bars */
-        background-color: #fff;
-        margin: 6px 0;
-        transition: 0.4s;
-    }
-
-    /* Display the nav menu as a column and adjust alignment */
-    nav ul {
-        position: absolute;
-        right: 0;
-        /* top: 60px; */
-        background-color: #016ea5;
-        border-radius: 0 0 5px 5px;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
+     nav ul {
         display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        /* top: 60px; Below the height of the nav bar */
+        left: 0;
+        right: 0;
+        background: #005a87;
+        margin: 0;
+        padding: 0;
+        z-index: 1000; 
+        border-radius: 0 0 5px 5px;
     }
 
+    /* Make the navigation links stack vertically */
     nav ul li {
-        display: block; /* Stack the list items vertically */
-        width: 100%; /* Full width links */
+        display: block;
+        width: 100%;
     }
 
     nav ul li a {
-        text-align: center;
+        text-align: left; 
+        width: 100%;
         padding: 10px;
-        border-bottom: 1px solid #fff; /* Separator for links */
+        border-bottom: 1px solid #fff;
     }
 
-    nav ul li:last-child a {
-        border-bottom: none; /* Remove bottom border for the last link */
-    }
-
+  
     nav ul.show {
-        display: flex;
+        display: block;
+    }
+
+
+    header h1 {
+        font-size: 1.5rem;
+        position: static; 
+        transform: none;
+        margin: 0 auto;
+        background-color: transparent; 
+    }
+
+ 
+    header img {
+        max-height: 200px;
+    }
+        
+
+    .dropdown-content {
+        box-shadow: none;
+    }
+    
+
+    .dropdown-content {
+        position: static;
+    }
+
+    .dropdown-content a {
+        width: 100%;
     }
 }

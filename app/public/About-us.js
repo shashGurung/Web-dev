@@ -1,43 +1,43 @@
 const aboutPageContent = {
     header: {
         title: 'About Us',
-        imageUrl: 'D21.jpg', // Replace with path to your image
+        imageUrl: 'asd1.jpeg',
         altText: 'Our Team'
     },
     intro: {
         content: 'Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...Short brief about our website goal...'
-        // More content here
+       
     },
     team: [
         {
-            photoUrl: 'team-p2.jpg', // Replace with path to your image
+            photoUrl: 'team-p2.jpg', 
             name: 'Ahmed',
             bio: 'Short bio of the member.',
             role: 'Project Manager',
             responsibilities: ['Project planning', 'Team management'],
             contributions: 'Led the development of the website.'
-            // More members...
+            
         },
         {
-            photoUrl: 'team-p2.jpg', // Replace with path to your image
+            photoUrl: 'team-p2.jpg', 
             name: 'Simon',
             bio: 'Short bio of the member.',
             role: 'Project Manager',
             responsibilities: ['Project planning', 'Team management'],
             contributions: 'Led the development of the website.'
-            // More members...
+            
         },{
-            photoUrl: 'team-p2.jpg', // Replace with path to your image
+            photoUrl: 'Shash-in.png', 
             name: 'Shash',
             bio: 'Short bio of the member.',
             role: 'Project Manager',
             responsibilities: ['Project planning', 'Team management'],
             adsadad:'asdasddadadasasd',
             contributions: 'Led the development of the website.'
-            // More members...
+            
         }
         
-        // ... Add more team member objects here
+        
     ]
 };
 
