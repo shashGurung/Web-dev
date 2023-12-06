@@ -7,7 +7,7 @@ const pageContent = {
     ],
     header: {
         title: 'UN Sustainable Development Goal 9: Industry, Innovation, and Infrastructure',
-        imageUrl: 'H21.jpg',
+        imageUrl: 'Goal-9-pi3.jpg',
         altText: 'Industry, Innovation, and Infrastructure'
     },
     keyInformation: {
@@ -31,7 +31,7 @@ const pageContent = {
         - Partnering with NGOs and governments to promote sustainable development.<br>
         - Using our voices and digital platforms to influence policy and prioritize sustainable goals.`,
     
-        imageUrl: 'D21.jpg',
+        imageUrl: 'Goal-9-pi2.png',
         altText: 'Key Information Visual Aid'
     },
     futureTargets: {
@@ -51,7 +51,7 @@ const pageContent = {
         <strong>9.B Domestic Technology Development:</strong> Back domestic technology development and innovation in developing countries, ensuring a conducive policy environment for industrial diversification and value addition.<br><br>
         
         <strong>9.C ICT Access:</strong> Dramatically broaden access to information and communications technology, aiming for universal and affordable Internet access in least developed countries by 2020.`,
-        imageUrl: 'D21.jpg',
+        imageUrl: 'Goal-9-pi.jpg',
         altText: 'Future Targets Visual Aid',
         targets: []
     },
@@ -67,9 +67,8 @@ document.addEventListener('DOMContentLoaded', function() {
     loadKeyInformation();
     loadFutureTargets();
     loadTeamInfo();
-    highlightActiveNav(); // Ensuring this is called on page load
+    highlightActiveNav(); 
 
-    // Ensure .dropbtn exists in the DOM before attaching event listener
     document.querySelector('.dropbtn').addEventListener('click', function() {
         this.querySelector('.arrow-down').classList.toggle('open');
     });
@@ -95,41 +94,30 @@ function loadNavigation() {
             const link = document.createElement('a');
             link.textContent = item.name;
             link.href = item.link;
-            if (item.active) {
-                link.classList.add('active');
-            }
             listItem.appendChild(link);
         }
         navLinksList.appendChild(listItem);
     });
 }
 
-document.addEventListener('click', function(e) {
-    if(e.target.classList.contains('dropbtn')) {
-        // Toggle dropdown
-        e.target.nextElementSibling.classList.toggle('show');
-    } else {
-        var dropdowns = document.getElementsByClassName('dropdown-content');
-        for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-});
 
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName('dropdown-content');
-        for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdownBtn = document.querySelector('.dropbtn');
+    const dropdownContent = document.querySelector('.dropdown-content');
+
+    // Toggle dropdown on button click
+    dropdownBtn.addEventListener('click', function(event) {
+        dropdownContent.classList.toggle('show');
+        event.stopPropagation();
+    });
+
+    // Close the dropdown if clicked outside
+    window.addEventListener('click', function(event) {
+        if (!dropdownBtn.contains(event.target)) {
+            dropdownContent.classList.remove('show');
         }
-    }
-};
+    });
+});
 
 function loadHeader() {
     const headerElement = document.getElementById('main-header');
@@ -169,9 +157,7 @@ function loadTeamInfo() {
     `;
 }
 
-document.querySelector('.dropbtn').addEventListener('click', function() {
-    this.querySelector('.arrow-down').classList.toggle('open');
-});
+
 
 function highlightActiveNav() {
     const navLinks = document.querySelectorAll('nav a');
@@ -186,6 +172,4 @@ function highlightActiveNav() {
     });
 }
 
-
-document.addEventListener('DOMContentLoaded', highlightActiveNav);
 window.addEventListener('hashchange', highlightActiveNav);

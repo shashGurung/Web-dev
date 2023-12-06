@@ -64,11 +64,10 @@ nav {
     content: '';
     position: absolute;
     top: 50%;
-    right: -10px; 
+    right: 5px; 
     transform: translateY(-50%);
     border: 5px solid transparent;
     border-top-color: #fff; 
-    border-bottom: none; 
 }
 
 .dropbtn .arrow-down.open:after {
@@ -78,20 +77,20 @@ nav {
 
 p{
     font-size: larger;
+    max-width: 95%;
 }
 
 strong{
     font-size: x-large;
-    /* background-color: rgba(252, 253, 203, 0.7); */
     padding: 5px;
     border-radius: 5px;
     max-width: 90%;
     box-sizing: border-box;
-    /* color: #fff; */
 }
 
 #KIT{
 font-size: 35px;
+max-width: 95%;
 }
 
 nav ul {
@@ -115,9 +114,6 @@ nav ul li a {
     border-color: #016ea5;
     border-left:  1px solid #016ea5 ;
     border-right:  1px solid #016ea5;
-    /* border-color: #fff; هنا تقدر تعدل على المنيكة اللي فوق 
-    border-width: 2px;
-    border-style: solid; */
 }
 
 nav ul li a:hover,
@@ -150,17 +146,19 @@ header {
     position: relative;
     text-align: center;
     color: white;
-    background-color: #333; /* Fallback color */
     overflow: hidden; 
+    border-radius:  5px;
 }
+
 
 header img {
     width: 100%;
-    max-height: 600px; 
     object-fit: cover; 
-    border-radius: 5px;
 }
 
+h1{
+    font-size: 40px;
+}
 header h1 {
     position: absolute;
     top: 50%;
@@ -186,7 +184,6 @@ section {
 section#key-information {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     gap: 20px;
 }
 
@@ -195,6 +192,8 @@ section#key-information img {
     height: 800px;
     margin-right: 20px;
     border-radius: 10px;
+    border: 2px solid;
+    border-color: #848484;
 }
 
 /* Future Targets Section with Image to the Left */
@@ -202,14 +201,15 @@ section#future-targets {
     display: flex;
     align-items: center;
     gap: 20px;
-    /* font-size: large; */
 }
 
 section#future-targets img {
     max-width: 35%;
-    height: 600px;
+    height: 700px;
     margin-right: 20px;
     border-radius: 10px;
+    border: 2px solid;
+    border-color: #848484;
 }
 
 h2{
@@ -259,7 +259,6 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         position: absolute;
-        /* top: 60px; Below the height of the nav bar */
         left: 0;
         right: 0;
         background: #005a87;
@@ -304,6 +303,7 @@ footer {
 
     .dropdown-content {
         box-shadow: none;
+        color: #a50101;
     }
     
 
