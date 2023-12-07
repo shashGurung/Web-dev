@@ -85,9 +85,9 @@ function loadNavigation() {
             listItem.innerHTML = `
             <a href="javascript:void(0)" class="dropbtn">Our Goals <span class="arrow-down"></span></a>
                 <div class="dropdown-content">
-                    <a href="goal6.html">Goal 6: Clean Water and Sanitation</a>
+                    <a href="Goal-6.html">Goal 6: Clean Water and Sanitation</a>
                     <a href="Goal-9.html">Goal 9: Industry, Innovation, and Infrastructure</a>
-                    <a href="goal10.html">Goal 10: Reduced Inequalities</a>
+                    <a href="Goal-10.html">Goal 10: Reduced Inequalities</a>
                 </div>
             `;
         } else {

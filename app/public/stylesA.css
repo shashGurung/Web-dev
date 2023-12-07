@@ -93,6 +93,16 @@ nav ul li a {
     font-weight: bold;
 }
 
+footer a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 30px;
+    display: block;
+    border-radius: 5px; /* Rounded corners for nav links */
+    font-size: 25px;
+    font-weight: bold;
+}
+
 nav ul li a:hover,
 nav ul li a.active { /* Styling for hover and active state */
     background-color: #2293bf; /* Active link background color */
@@ -190,6 +200,23 @@ footer {
     display: none; 
     cursor: pointer;
    
+}
+
+#forminstructions {
+    font-size: small;
+}
+
+fieldset{
+    display:block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #016ea5;
+    border-width: 10px;
 }
 
 /* Media Queries for Responsive Design */

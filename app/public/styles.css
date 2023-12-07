@@ -116,6 +116,16 @@ nav ul li a {
     border-right:  1px solid #016ea5;
 }
 
+footer a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 30px;
+    display: block;
+    border-radius: 5px; /* Rounded corners for nav links */
+    font-size: 25px;
+    font-weight: bold;
+}
+
 nav ul li a:hover,
 nav ul li a.active {
     background-color: #2293bf; /* Active link background color */
