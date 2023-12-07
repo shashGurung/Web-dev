@@ -1,4 +1,5 @@
 const express = require('express')
+const fs = require('fs')
 const app = express();
 const port = 3000;
 
@@ -21,6 +22,10 @@ app.post('/form', jsonParser, (req,res) => {
     const lastname = body.lastname;
     const email = body.email;
     const comments = body.comments;
+    var data = '\nEntry: First name: ' + firstname + ' , Last name: ' + lastname + ' , Email: ' +email+ ' , Comments: ' + comments
+    fs.appendFile('formdata.txt', data, (err) =>{
+        if (err) throw err;
+    })
     res.send(' POST by form.js - first name = ' + firstname + ' , lastname = ' + lastname + ' , email = ' +email+ ' , comments = ' + comments);
     // Save this data to signups.txt
 })

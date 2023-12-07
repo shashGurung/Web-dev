@@ -43,7 +43,7 @@ const aboutPageContent = {
         
     ],
     teamInfo: {
-        title: 'Team Information',
+        title: '<a href="About-us.html">Team Information</a>',
         content: 'Our team is dedicated to spreading awareness and driving action towards Sustainable Development Goals 6, 9 and 10.'
     }
 };
@@ -86,7 +86,7 @@ function loadIntro() {
 }
 
 function loadTeamInfo() {
-    const teamInfoElement = document.getElementById('team1-info');
+    const teamInfoElement = document.getElementById('team-info');
     teamInfoElement.innerHTML = `
         <h2>${aboutPageContent.teamInfo.title}</h2>
         <p>${aboutPageContent.teamInfo.content}</p>

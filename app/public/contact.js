@@ -4,12 +4,17 @@ const pageContent = {
         { name: 'Our Goals', link: 'Goal-9.html', active: true },
         { name: 'Sign Up', link: 'contact.html' },
         { name: 'About Us', link: 'About-us.html' }
-    ]
+    ],
+    teamInfo: {
+        title: '<a href="About-us.html">Team Information</a>',
+        content: 'Our team is dedicated to spreading awareness and driving action towards Sustainable Development Goals 6, 9 and 10.'
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
     loadNavigation();
-
+    loadTeamInfo();
+    
     document.querySelector('.dropbtn').addEventListener('click', function() {
         this.querySelector('.arrow-down').classList.toggle('open');
     });
@@ -39,4 +44,11 @@ function loadNavigation() {
         }
         navLinksList.appendChild(listItem);
     });
+}
+function loadTeamInfo() {
+    const teamInfoElement = document.getElementById('team-info');
+    teamInfoElement.innerHTML = `
+        <h2>${pageContent.teamInfo.title}</h2>
+        <p>${pageContent.teamInfo.content}</p>
+    `;
 }

@@ -56,7 +56,7 @@ const pageContent = {
         targets: []
     },
     teamInfo: {
-        title: 'Team Information',
+        title: '<a href="About-us.html">Team Information</a>',
         content: 'Our team is dedicated to spreading awareness and driving action towards Sustainable Development Goals 6, 9 and 10.'
     }
 };

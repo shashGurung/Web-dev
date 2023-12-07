@@ -47,6 +47,9 @@ function onResponse(response){
 }
 
 function onTextReady(text){
+    let confirmation = document.querySelector('#confirmation-text')
+    confirmation.style.cssText = "color: green;\nfont-size: small;";
+    confirmation.textContent = "Contact details have been recorded!";
     let formresults = document.querySelector('#form-results')
     formresults.style.cssText = "color: red;";
     formresults.textContent = text;
