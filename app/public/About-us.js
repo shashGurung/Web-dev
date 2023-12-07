@@ -2,7 +2,7 @@ const aboutPageContent = {
     navigation: [
         { name: 'Home', link: 'index.html' },
         { name: 'Our Goals', link: 'Goal-9.html' },
-        { name: 'Sign Up', link: 'signup.html' },
+        { name: 'Sign Up', link: 'contact.html' },
         { name: 'About Us', link: 'About-us.html', active: true }
     ],
     header: {

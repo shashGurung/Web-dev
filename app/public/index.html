@@ -2,23 +2,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesA.css">
     <title>Home Page</title>
 </head>
 <body>
-    <header>
-        <h1>UN Sustainable Development</h1>
-        <nav id = "mainNav">
-            <ul>
-                <li class="currentNav"><a href="index.html">Home</a></li>
-                <li class="nav"><a href="goals.html">Goals</a></li>
-                <li class="nav"><a href="teaminformation.html">Team Information</a></li>
-                <li class="nav"><a href="contact.html">Sign Up</a></li>
-            </ul>
-        </nav>
-    </header>
-    <footer>
-        <p><a href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/">UN Sustainablity Goals</a></p>
-    </footer>
+    <nav id="main-nav">
+        <!-- Hamburger Icon -->
+        <div id="hamburger-icon" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <!-- Navigation links -->
+        <ul id="nav-links">
+            <li><a href="index.html" class = "active">Home</a></li>
+            <li><a href="Goal-9.html">Our Goals</a></li>
+            <li><a href="contact.html">Sign Up</a></li>
+            <li><a href="About-us.html">About Us</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
