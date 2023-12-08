@@ -39,7 +39,7 @@ app.post('/form', jsonParser, (req,res) => {
         from: 'simonalt782@gmail.com',
         to: email,
         subject: 'Confirmation of Sign Up',
-        text: 'Thank you ' + firstname + ' ' + lastname + 'for signing up!\nWe will soon read your comment: "' + comments + '"'
+        text: 'Thank you ' + firstname + ' ' + lastname + ' for signing up!\nWe will soon read your comment: "' + comments + '"'
     };
     transporter.sendMail(mailOptions, function(error, info){
         if (error) {

@@ -15,6 +15,9 @@ body {
     border-radius: 5px;
 }
 
+#team-info a:hover{
+    color: #5b5c6e;
+}
 
 /* Navigation */
 nav {
