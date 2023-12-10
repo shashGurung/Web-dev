@@ -33,7 +33,7 @@ const aboutPageContent = {
             
         },{
             photoUrl: 'Shash-in.png', 
-            name: 'Shash Gurng',
+            name: 'Shash Gurung',
             // bio: 'Short bio of the member.',
             Email:'shash.gurung@uea.ac.uk',
             contributions: 'The developer and the designer of the "Goal 6: Clean Water and Sanitation" and "Home" pages, also wrote the HTML, CSS, and Javascript codes for these two pages.'

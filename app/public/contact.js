@@ -15,8 +15,22 @@ document.addEventListener('DOMContentLoaded', function() {
     loadNavigation();
     loadTeamInfo();
     
-    document.querySelector('.dropbtn').addEventListener('click', function() {
-        this.querySelector('.arrow-down').classList.toggle('open');
+    const dropdownBtn = document.querySelector('.dropbtn');
+    const dropdownContent = document.querySelector('.dropdown-content');
+
+    // Toggle dropdown on button click
+    if (dropdownBtn) {
+        dropdownBtn.addEventListener('click', function(event) {
+            dropdownContent.classList.toggle('show');
+            event.stopPropagation();
+        });
+    }
+
+    // Close the dropdown if clicked outside
+    window.addEventListener('click', function(event) {
+        if (dropdownBtn && !dropdownBtn.contains(event.target)) {
+            dropdownContent.classList.remove('show');
+        }
     });
 });
 

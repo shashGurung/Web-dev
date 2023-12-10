@@ -4,9 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesA.css">
     <title>Sign Up</title>
-    <script src="contact.js" defer></script>
-    <script src="form.js" defer></script>
     <script src="https://kit.fontawesome.com/cbf0cf8887.js" crossorigin="anonymous"></script>
+    <script src="form.js" defer></script>
+    <script src="contact.js" defer></script>
     <link rel="icon" href="logoP.png" type="image/x-icon">
 
 </head>
@@ -21,8 +21,16 @@
         <!-- Navigation links -->
         <ul id="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="Goal-9.html">Our Goals</a></li>
-            <li><a href="contact.html" class = "active">Sign Up</a></li>
+            <!-- Our Goals Dropdown -->
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Our Goals <span class="arrow-down"></span></a>
+                <div class="dropdown-content">
+                    <a href="Goal-6.html">Goal 6: Clean Water and Sanitation</a>
+                    <a href="Goal-9.html">Goal 9: Industry, Innovation, and Infrastructure</a>
+                    <a href="Goal-10.html">Goal 10: Reduced Inequalities</a>
+                </div>
+            </li>
+            <li><a href="contact.html"class="active">Sign Up</a></li>
             <li><a href="About-us.html">About Us</a></li>
         </ul>
     </nav>
