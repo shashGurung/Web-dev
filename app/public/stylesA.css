@@ -261,27 +261,31 @@ fieldset{
 }
 .goalimg{
     text-align: center;
-    display: inline-flex;
+    display: inline;
     width: 33%;
     height: auto;
     border-style: solid;
     border-radius: 20px;
     border-color: #016ea5;
+}
 
+#button{
+    text-align: center;
 }
 .btn{
-
     display: inline-block;
     background-color: #2293bf ;
     color: white;
     text-transform: uppercase;
     padding: 6px 10px;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 32px;
     border: 2px solid #2293bf;
     border-radius: 20px;
     cursor: pointer;
     text-align: center;
+    width: 25%;
+    height: 12.5%;
 }
 
 #team-info a:hover{
@@ -351,6 +355,20 @@ fieldset{
 
     nav ul.show {
         display: flex;
+    }
+
+    .goalimg{
+        text-align: center;
+        display: flex;
+        width: 33%;
+        height: auto;
+        border-style: solid;
+        border-radius: 20px;
+        border-color: #016ea5;
+    }
+
+    #goallinks{
+        text-align: center;
     }
 }
 @media (max-width: 1465px){
