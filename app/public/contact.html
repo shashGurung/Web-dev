@@ -6,6 +6,7 @@
     <title>Home Page</title>
     <script src="contact.js" defer></script>
     <script src="form.js" defer></script>
+    <script src="https://kit.fontawesome.com/cbf0cf8887.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav id="main-nav">
@@ -31,17 +32,17 @@
             <p id="forminstructions">required information is marked with an asterisk (*)</p>
             <form method="post" action = "" id="form">
                 <fieldset>
-                    <legend><strong>Sign-Up</strong></legend>
-                    <label for="firstname"><b>First Name: (*)</b></label>
+                    <legend><strong>Sign-Up <i class="fa-regular fa-message"></i> </strong></legend>
+                    <label for="firstname"><b>First Name <i class="fa-regular fa-user"></i>: (*)</b></label>
                     <input type="text" id="firstname" size="25" required aria-required="true"/>
                     <br>
-                    <label for="lastname"><b>Last Name: (*)</b></label>
+                    <label for="lastname"><b>Last Name <i class="fa-regular fa-user"></i>: (*)</b></label>
                     <input type="text" id="lastname" size="25" required aria-required="true"/>
                     <br>
-                    <label for="email"><b>Email: (*)</b></label>
+                    <label for="email"><b>Email <i class="fa-regular fa-envelope-open"></i>: (*)</b></label>
                     <input type="email" id="email" size="25" required aria-required="true"/>
                     <br>
-                    <label for="comments"><b>Comments: (*)</b></label>
+                    <label for="comments"><b>Comments <i class="fa-regular fa-comment"></i>: (*)</b></label>
                     <textarea id="comments" size="25" required aria-required="true"></textarea>
                     <br>
                     <button id="submit" type="submit" form="form">Confirm</button>
