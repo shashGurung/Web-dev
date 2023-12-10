@@ -7,12 +7,12 @@ const pageContent = {
     ],
     header: {
         title: 'UN Sustainable Development Goal 6: Clean water and Sanitation',
-        imageUrl: '', // change to goal 6 image horizontal
+        imageUrl: 'goal6-img4.jpg', 
         altText: 'Ensure access to water and sanitation for all'
     },
     keyInformation: {
         title: 'Key Information',
-        text:  `<strong id="KIT">Goal 6: Clean water and Sanitation</strong><br><br>
+        text:  `<strong id="KIT">Goal 6: Clean Water and Sanitation</strong><br><br>
 
         <strong>Why?:</strong> Access to water, sanitation and hygiene is a human right. To get back on track, key strategies include increasing sector-wide investment and capacity-building, promoting innovation and evidence-based action, enhancing cross-sectoral coordination and cooperation among all stakeholders, and adopting a more integrated and holistic approach to water management. Water is essential not only to health, but also to poverty reduction, food security, peace and human rights, ecosystems and education. Nevertheless, countries face growing challenges linked to water scarcity, water pollution, degraded water-related ecosystems and cooperation over transboundary water basins.<br><br>
         
@@ -30,24 +30,24 @@ const pageContent = {
     },
     futureTargets: {
         title: 'Future Targets <br>',
-        text: `<strong>6.1 By 2030, achieve universal and equitable access to safe and affordable drinking water for all.<br><br>
+        text: `<strong>6.1 By 2030: </strong>achieve universal and equitable access to safe and affordable drinking water for all.<br><br>
         
-        <strong>6.2 By 2030, achieve access to adequate and equitable sanitation and hygiene for all and end open defecation, paying special attention to the needs of women and girls and those in vulnerable situations.<br><br>
+        <strong>6.2 By 2030: </strong>achieve access to adequate and equitable sanitation and hygiene for all and end open defecation, paying special attention to the needs of women and girls and those in vulnerable situations.<br><br>
         
-        <strong>6.3 By 2030, improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally.<br><br>
+        <strong>6.3 By 2030: </strong>improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally.<br><br>
         
-        <strong>6.4 By 2030, substantially increase water-use efficiency across all sectors and ensure sustainable withdrawals and supply of freshwater to address water scarcity and substantially reduce the number of people suffering from water scarcity.<br><br>
+        <strong>6.4 By 2030: </strong>substantially increase water-use efficiency across all sectors and ensure sustainable withdrawals and supply of freshwater to address water scarcity and substantially reduce the number of people suffering from water scarcity.<br><br>
 
-        <strong>6.5 By 2030, implement integrated water resources management at all levels, including through transboundary cooperation as appropriate.<br><br>
+        <strong>6.5 By 2030: </strong> implement integrated water resources management at all levels, including through transboundary cooperation as appropriate.<br><br>
 
-        <strong>6.6 By 2020, protect and restore water-related ecosystems, including mountains, forests, wetlands, rivers, aquifers and lakes.<br><br>
+        <strong>6.6 By 2020: </strong>protect and restore water-related ecosystems, including mountains, forests, wetlands, rivers, aquifers and lakes.<br><br>
 
-        <strong>6.A By 2030, expand international cooperation and capacity-building support to developing countries in water- and sanitation-related activities and programmes, including water harvesting, desalination, water efficiency, wastewater treatment, recycling and reuse technologies.<br><br>
+        <strong>6.A By 2030: </strong>expand international cooperation and capacity-building support to developing countries in water- and sanitation-related activities and programmes, including water harvesting, desalination, water efficiency, wastewater treatment, recycling and reuse technologies.<br><br>
     
-        <strong>6.B Support and strengthen the participation of local communities in improving water and sanitation management.`,
+        <strong>6.B Support and strengthen: </strong> the participation of local communities in improving water and sanitation management.`,
 
-        imageUrl: 'Goal-9-pi.jpg',
-        altText: 'Future Targets Visual Aid', // ask ahmed 
+        imageUrl: 'Goal-6-img3.png',
+        altText: 'Future Targets Visual Aid', 
         targets: []
     },
     teamInfo: {
