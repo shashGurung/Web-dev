@@ -84,7 +84,6 @@ function clickHandler(e) {
         {
             window.location = 'Goal-10.html'
         }
-    }
-    
+    } 
 }
 
