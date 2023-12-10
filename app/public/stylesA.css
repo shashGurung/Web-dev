@@ -246,6 +246,9 @@ fieldset{
 .HomeTxt{
 
     text-align: center;
+    color: #2293bf;
+    text-transform: uppercase;
+
 }
 #mainimg{
     text-align: center;
@@ -263,6 +266,20 @@ fieldset{
     border-radius: 20px;
     border-color: #016ea5;
 
+}
+.btn{
+
+    display: inline-block;
+    background-color: #2293bf ;
+    color: white;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    font-weight: 700;
+    font-size: 16px;
+    border: 2px solid #2293bf;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
 }
 
 #team-info a:hover{
