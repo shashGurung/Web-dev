@@ -241,6 +241,24 @@ fieldset{
     border-color: #016ea5;
     border-width: 10px;
 }
+/*  Shash added the css below for main page    */
+
+.goal6img{
+    text-align: center;
+}
+
+.goal9img{
+    text-align: center;
+    
+}
+
+.goal10img{
+    text-align: center;
+    size: auto;
+
+}
+
+
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
