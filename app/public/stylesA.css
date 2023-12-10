@@ -247,8 +247,12 @@ fieldset{
 
     text-align: center;
 }
-.mainimg{
+#mainimg{
     text-align: center;
+}
+.mainimg{
+    width: 50%;
+    height: 100%;
 }
 .goalimg{
     text-align: center;
@@ -256,7 +260,7 @@ fieldset{
     width: 33%;
     height: auto;
     border-style: solid;
-    border-radius: 200px;
+    border-radius: 20px;
     border-color: #016ea5;
 
 }
