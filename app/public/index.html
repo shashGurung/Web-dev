@@ -5,8 +5,8 @@
     <link rel="stylesheet" href="stylesA.css">
     <title>Home Page</title>
     <script src="hamburger.js" defer></script>
-    <script src="About-us.js" defer></script>
-    <script src="About-us.js" defer></script>
+    <script src="index.js" defer></script>
+   
 
 </head>
 <body>
@@ -19,7 +19,7 @@
         </div>
         <!-- Navigation links -->
         <ul id="nav-links">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html"class="active">Home</a></li>
             <!-- Our Goals Dropdown -->
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Our Goals <span class="arrow-down"></span></a>
@@ -30,23 +30,33 @@
                 </div>
             </li>
             <li><a href="contact.html">Sign Up</a></li>
-            <li><a href="About-us.html" class="active">About Us</a></li>
+            <li><a href="About-us.html">About Us</a></li>
         </ul>
     </nav>
     <main>
-        <article class = "goal6img">
+
+        <article class = "Mainimg">
+            <figure>
+                <img src="Homepage-main.png" alt="">
+            </figure>
+         </article>
+
+         <h1>
+            <p class = "HomeTxt"> Our Goals </p>
+         </h1>
+        <article class = "goalimg">
             <figure>
                 <img src="Homepage-goal6.png" alt="">
             </figure>
          </article>
 
-         <article class = "goal9img">
+         <article class = "goalimg">
             <figure>
                 <img src="homepage-goal9.png" alt="">
             </figure>
          </article>
 
-         <article class = "goal10img">
+         <article class = "goalimg">
             <figure>
                 <img src="Homepage-goal10.png" alt="">
             </figure>
@@ -54,8 +64,8 @@
     </main>
 
     <footer id="team-info">
-        <i>Team information</i>
-        </footer>
+        <!-- Team information will be loaded here by JavaScript -->
+    </footer>
 
 </body>
 </html>

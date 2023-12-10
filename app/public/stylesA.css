@@ -243,22 +243,23 @@ fieldset{
 }
 /*  Shash added the css below for main page    */
 
-.goal6img{
+.HomeTxt{
+
     text-align: center;
 }
-
-.goal9img{
+.mainimg{
     text-align: center;
-    
 }
-
-.goal10img{
+.goalimg{
     text-align: center;
-    size: auto;
+    display: inline;
+    width: 20%;
+    height: 20%;
+    border-style: solid;
+    border-radius: 200px;
+    border-color: #016ea5;
 
 }
-
-
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
