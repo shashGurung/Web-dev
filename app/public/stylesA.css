@@ -252,9 +252,9 @@ fieldset{
 }
 .goalimg{
     text-align: center;
-    display: inline;
-    width: 20%;
-    height: 20%;
+    display: inline-flex;
+    width: 33%;
+    height: auto;
     border-style: solid;
     border-radius: 200px;
     border-color: #016ea5;
