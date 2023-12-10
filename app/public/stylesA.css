@@ -365,16 +365,14 @@ button a{
 
     .goalimg{
         text-align: center;
-        display: flex;
-        width: 33%;
+        display: block;
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
         height: auto;
         border-style: solid;
         border-radius: 20px;
         border-color: #016ea5;
-    }
-
-    #goallinks{
-        text-align: center;
     }
 }
 @media (max-width: 1465px){
