@@ -265,6 +265,15 @@ fieldset{
 
 }
 
+#team-info a:hover{
+    background-color: #fb6a6a;
+    border-radius: 5px;
+}
+
+#team-info a{
+    background-color: #ff0606;
+}
+
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
    
