@@ -244,17 +244,14 @@ fieldset{
     border-color: #016ea5;
     border-width: 10px;
 }
-<<<<<<< HEAD
-=======
 /*   css below for main page    */
 
->>>>>>> 32ebc38d7e6aef95285cc059cd6439c010506d0b
+
 .HomeTxt{
     text-align: center;
     color: #000000;
     text-transform: uppercase;
     font-size: larger;
-
 }
 
 h1.HomeTxt{
