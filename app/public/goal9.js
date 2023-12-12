@@ -1,3 +1,4 @@
+//To hold the content for dynamic webpage loading. Includes navigation links, header details, key information about SDG 9, future targets, and team info.
 const pageContent = {
     navigation: [
         { name: 'Home', link: 'index.html' },
@@ -61,6 +62,7 @@ const pageContent = {
     }
 };
 
+//Executes content loading functions after the full HTML document loads. Calls functions to populate navigation, header, key information, future targets, and team info sections.
 document.addEventListener('DOMContentLoaded', function() {
     loadNavigation();
     loadHeader();
@@ -74,6 +76,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+//Creates navigation menu from pageContent.navigation.
 function loadNavigation() {
     const navLinksList = document.getElementById('nav-links');
     navLinksList.innerHTML = '';
@@ -158,7 +162,7 @@ function loadTeamInfo() {
 }
 
 
-
+//Highlights the active navigation link based on the current page URL.
 function highlightActiveNav() {
     const navLinks = document.querySelectorAll('nav a');
     const currentLocation = window.location.pathname; 
@@ -172,4 +176,3 @@ function highlightActiveNav() {
     });
 }
 
-window.addEventListener('hashchange', highlightActiveNav);
