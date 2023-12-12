@@ -1,7 +1,7 @@
 const pageContent = {
     navigation: [
         { name: 'Home', link: 'index.html' },
-        { name: 'Our Goals', link: 'Goal-9.html',},
+        { name: 'Our Goals', link: 'Goal-10.html',},
         { name: 'Sign Up', link: 'contact.html' },
         { name: 'About Us', link: 'About-us.html' }
     ],
