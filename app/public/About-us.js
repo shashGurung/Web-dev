@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const dropdownBtn = document.querySelector('.dropbtn');
     const dropdownContent = document.querySelector('.dropdown-content');
 
-    // Toggle dropdown on button click
+    // Toggle dropdown on button click(Menu)
     if (dropdownBtn) {
         dropdownBtn.addEventListener('click', function(event) {
             dropdownContent.classList.toggle('show');
