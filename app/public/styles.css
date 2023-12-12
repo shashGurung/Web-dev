@@ -79,11 +79,6 @@ nav {
     border-top-color: #fff; 
 }
 
-.dropbtn .arrow-down.open:after {
-    border-top: none;
-    border-bottom-color: #fff; 
-}
-
 p{
     font-size: larger;
     max-width: 95%;

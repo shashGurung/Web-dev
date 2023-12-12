@@ -53,11 +53,6 @@ body {
     border-top-color: #fff; 
 }
 
-.dropbtn .arrow-down.open:after {
-    border-top: none;
-    border-bottom-color: #fff; 
-}
-
 
 /* Navigation */
 nav {
