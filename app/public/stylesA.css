@@ -160,6 +160,7 @@ section {
     height: 450px; 
 }
 
+
 #team-information img {
     width: 400px;
     height: auto;
@@ -243,15 +244,26 @@ fieldset{
     border-color: #016ea5;
     border-width: 10px;
 }
-/*  Shash added the css below for main page    */
-
 .HomeTxt{
-
     text-align: center;
-    color: #2293bf;
+    color: #000000;
     text-transform: uppercase;
+    font-size: larger;
 
 }
+
+h1.HomeTxt{
+    text-align: center;
+    color: #006a93;
+    text-transform: uppercase;
+    font-size: xx-large;
+}
+
+#goallinks{
+margin: auto;
+align-items: center;
+}
+
 #mainimg{
     text-align: center;
 }
@@ -259,15 +271,36 @@ fieldset{
     width: 50%;
     height: 100%;
 }
+
+#btn-home{
+    background-color: #ff0606;
+    border-color:  #040404;
+    border-width: 2px; 
+}
+
+#btn-home:hover {
+    background-color: #fb5b5b;
+    border-color:  #040404;
+    border-width: 4px; 
+}
+
 .goalimg{
     text-align: center;
     display: inline;
-    width: 33%;
+    width: 32%;
     height: auto;
     border-style: solid;
     border-radius: 20px;
-    border-color: #016ea5;
+    border-color: #000000;
 }
+
+.goalimg:hover{
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #000000;
+    border-width: 5px; 
+}
+
 
 #button{
     text-align: center;
@@ -290,7 +323,9 @@ fieldset{
 
 #team-info a:hover{
     background-color: #fb6a6a;
+    font-size: 30px;
     border-radius: 5px;
+    color: #ddd;
 }
 
 button a{
@@ -299,9 +334,18 @@ button a{
     font-size: 2.25vw;
 }
 
+#picture1{
+    max-width: 90%;
+    max-height: 10%;
+    height: 900px;
+    width: 1000px;
+}
+
+
 #team-info a{
     background-color: #ff0606;
 }
+
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
